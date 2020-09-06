@@ -27,7 +27,7 @@ class Database:
             elif error.errno == errorcode.ER_ACCESS_DENIED_ERROR:
                 print("User name or password is wrong")
             else:
-                print(error)
+                print(errorcode)
 
     def execute_query(self, query, params=None):
         cursor = self.conn.cursor()
